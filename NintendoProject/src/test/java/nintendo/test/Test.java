@@ -18,6 +18,9 @@ public class Test {
 		Jeu Jeu4 = new Jeu("Super Mario Bros Return", Switch, boutique);
 		Jeu Jeu5 = new Jeu("Mario clash Luigi", Switch, boutique);
 		
+		Client client1 = new Client("Bowser","John");
+		Client client2 = new Client("MiniBowser","Junior");
+		
 
 	}
 
