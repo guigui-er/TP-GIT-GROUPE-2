@@ -1,14 +1,13 @@
 package nintendo.model;
 import java.time.LocalDate;
 
-<<<<<<< HEAD
+
 public abstract class Console {
-=======
-public class Console {
+
     private String nom;          
     private double prix;
     private LocalDate dateSortie;
->>>>>>> origin/Modifclassconsole
+
 
     public Console(String nom, double prix, LocalDate dateSortie) {
         this.nom = nom;
