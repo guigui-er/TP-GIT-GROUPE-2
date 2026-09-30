@@ -1,6 +1,8 @@
 package nintendo.test;
 
 import nintendo.model.Jeu;
+import nintendo.model.Adresse;
+import nintendo.model.Boutique;
 import nintendo.model.Console;
 
 public class Test {
@@ -14,6 +16,8 @@ public class Test {
 		Jeu Jeu4 = new Jeu("Super Mario Bros Return", Switch);
 		Jeu Jeu5 = new Jeu("Mario clash Luigi", Switch);
 		
+		Adresse adresse = new Adresse ("rue hyrule","31000","Toulouse");
+		Boutique boutique = new Boutique ("Nintendo Store Shop", adresse);
 	}
 
 }
