@@ -1,5 +1,8 @@
 package nintendo.test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import nintendo.model.Adresse;
 import nintendo.model.Boutique;
 import nintendo.model.Client;
@@ -13,6 +16,8 @@ public class Test {
 		Adresse adresse = new Adresse("rue hyrule","31000","Toulouse");
 		Boutique boutique = new Boutique("Nintendo Store Shop", adresse);
 		Console Switch = new Console("Switch",null,null);
+		List<Jeu> listeAchats = new ArrayList<>();
+		
 		Jeu Jeu1 = new Jeu("Super Smash Bros", Switch, boutique);
 		Jeu Jeu2 = new Jeu("Super Mario 64 Redux", Switch, boutique);
 		Jeu Jeu3 = new Jeu("Mario Kart 10", Switch, boutique);
@@ -21,6 +26,9 @@ public class Test {
 		
 		Client client1 = new Client("Bowser","John");
 		Client client2 = new Client("MiniBowser","Junior");
+		
+		listeAchats.add(Jeu1);
+        listeAchats.add(Jeu2);
 		
 
 	}
