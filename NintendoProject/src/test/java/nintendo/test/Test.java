@@ -13,7 +13,7 @@ public class Test {
 
 	public static void main(String[] args) 
 	{
-		Adresse adresse = new Adresse("rue hyrule","31000","Toulouse");
+		Adresse adresse = new Adresse("270","rue hyrule","Toulouse");
 		Boutique boutique = new Boutique("Nintendo Store Shop", adresse);
 		Console Switch = new Console("Switch",null,null);
 		List<Jeu> listeAchats = new ArrayList<>();
@@ -29,7 +29,11 @@ public class Test {
 		
 		listeAchats.add(Jeu1);
         listeAchats.add(Jeu2);
-		
+        
+       System.out.println("Ceci est le client 2 : " + client2.getPrenom() + " " + client2.getNom());
+       System.out.println("Ceci est le jeu 2 : " + Jeu2.getTitre());
+       System.out.println("Ceci est la boutique : " + boutique.getNom() + " à l'adresse suivante : " + adresse.getNumero() + " " + adresse.getRue() + " " + adresse.getVille());
+       System.out.println(listeAchats.toString());		
 
 	}
 
